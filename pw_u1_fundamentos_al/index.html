@@ -21,8 +21,8 @@
         <!--Textos-->
         <strong>Texto en negrilla</strong>
         <br>
-        <em> Texto en cursiva resaltado</em>
-        <i>Texto <em>Texto</em>en cursiva</i>
+        <em>Juegos de matemáticas</em>
+        <i>Texto en cursiva</i>
         <u>Texto subrayado</u>
         <hr>
         <s>Texto eliminado</s>
@@ -42,9 +42,86 @@
             <li>Cuarto</li>
             <li>Quinto</li>
         </ol>
+
+        <!--CLASE 2-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cédula</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Ángelo</th>
+                    <th>Lascano</th>
+                    <th>123456</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <th>Marco</th>
+                    <th>Polo</th>
+                    <th>123456</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <th>Pedro</th>
+                    <th>Amalonas</th>
+                    <th>123456</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <th>Pepe</th>
+                    <th>Pamplonas</th>
+                    <th>123456</th>
+                    <th><button>Editar</button></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Contenedores HTML-->
+        <!--header,body,aside,nav,section=Destinados a contener los elementos de la página visual-->
+        <div>
+            <button>Actualizar</button>
+            <button>Eliminar</button>
+            <button>Guardar</button>
+        </div>
+
+        <hr>
+        <!--Formulario: Conjunto de campos que permite ingresar y presentar información. Se usa form-->
+        <!--Se debe usar el input con el type correcto según se requiera-->
+        <form action="https://www.google.com">
+            <!--En "action" va la url de la api donde guarda en la BD-->
+            <h1>Estudiante</h1>
+            <label for="id_nombre">Nombre:</label>
+            <input id="id_nombre" type="text">
+            <label for="id_email" >Email:</label>
+            <input id="id_email" type="email">
+            <label for="id_date">Fecha de Nacimiento:</label>
+            <input type="date" name="" id="id_date">
+            <label for="id_password">Contraseña</label>
+            <input id="id_password" type="password">
+            <button>Guardar</button>
+        </form>
+
+        <!--Multimedia-->
+        <img src="https://tse4.mm.bing.net/th/id/OIP.XFC4Dh-I9uJmYES9ecd6XQHaEZ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagen invalida" width="250" height="150">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="Imagen invalida" width="166" height="150">
+        <img src="img\juggernaut.jpg" alt="Error en imagen" width="320" >
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
     </section>
-    <aside></aside>
+
+    <aside>
+        
+    </aside>
+
     <footer>
+        <br>
         Av. América entre la Gasca y Bolivia
         <br>
         <i>Todos los derechos reservados.</i>
