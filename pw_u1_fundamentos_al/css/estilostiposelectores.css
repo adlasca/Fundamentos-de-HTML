@@ -1,0 +1,55 @@
+
+/*---Selector por clase---*/
+.titulos{
+    color:red;
+    font-size: 25px;
+    background: beige;
+}
+
+/*---Selector por ID---*/
+#id_titulo{
+    color:aquamarine;
+    font-size: 35px;
+    font-family: 'Lucida Sans';
+    background: blue;
+}
+
+/*---Selector por pseudoclase (eventos)---*/
+i:hover{
+    color: antiquewhite;
+    font-size: 30px;
+    background: green;
+}
+input:focus{
+    border-color: rgb(172, 21, 147);
+    border-width: 15px;
+    border-style: dashed;
+    background: yellow;  
+}
+button:hover{
+    color: red;
+    background: aquamarine;
+    
+}
+
+/*---Por atributo---*/
+
+[id]{
+    color:brown;
+    font-size: 35px;
+}
+/*con alt* se puede elegir la palabra que contenga la referencia*/
+img[alt*="No1"]{
+    width:150px;
+    border: dotted red;
+}
+img[alt="No2"] {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/*---Selector Universal---*/
+*{
+    /*declaraciones*/
+    background-color: antiquewhite;
+}

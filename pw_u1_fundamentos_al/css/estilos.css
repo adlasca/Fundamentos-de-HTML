@@ -24,3 +24,7 @@ p {
     border: 5px outset tan;
     font-family: 'Franklin Gothic Medium';
 }
+
+body{
+    background-color: black;
+}
