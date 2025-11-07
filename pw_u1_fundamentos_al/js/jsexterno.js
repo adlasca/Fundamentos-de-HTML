@@ -34,40 +34,40 @@ function dividir(num1, num2) {
 }
 
 function evaluarOperacion(tipo) {
-    let num1=parseFloat(document.getElementById('id_n1').value);
-    let num2=parseFloat(document.getElementById('id_n2').value);
+    let num1 = parseFloat(document.getElementById('id_n1').value);
+    let num2 = parseFloat(document.getElementById('id_n2').value);
     let resultado = 0;
-    if (tipo==='+') {
-        resultado=sumar(num1,num2);
+    if (tipo === '+') {
+        resultado = sumar(num1, num2);
     }
-    if (tipo==='-') {
-        resultado=restar(num1,num2);
+    if (tipo === '-') {
+        resultado = restar(num1, num2);
     }
-    if (tipo==='*') {
-        resultado=multiplicar(num1,num2);
+    if (tipo === '*') {
+        resultado = multiplicar(num1, num2);
     }
-    if (tipo==='/') {
-        resultado=dividir(num1,num2);
+    if (tipo === '/') {
+        resultado = dividir(num1, num2);
     }
-    document.getElementById('id_resultado').innerText=resultado;
+    document.getElementById('id_resultado').innerText = resultado;
 }
 
-function fundamentosJS(){
+function fundamentosJS() {
     /*-----Tipos de variables-----*/
-    var nombre ="Pedro" ; // Variable Obsoleta
+    var nombre = "Pedro"; // Variable Obsoleta
     let apellido = "Lora"; // Variables cambiantes
     //Tipado dinámico: no se necesita declarar el tipo de dato, se puede cambiar de tipo de dato exm: String a Int
-    let apellido2=15;
-    let arreglo = [1,2,3,4,5,6]
-    let diaSemana = ['lunes','martes', '...']
+    let apellido2 = 15;
+    let arreglo = [1, 2, 3, 4, 5, 6]
+    let diaSemana = ['lunes', 'martes', '...']
     //Constante
-    const iva=0.15;
+    const iva = 0.15;
     console.log('lol');
     console.log(nombre);
     console.log(arreglo);
     console.log(diaSemana);
     //Manejo de arreglos
-    const arreglo1=[1,2,3];
+    const arreglo1 = [1, 2, 3];
     arreglo1.push(3);
     //Agrega al final
     console.log(arreglo1);
@@ -81,21 +81,21 @@ function fundamentosJS(){
     console.log(arreglo1[5])
     console.log(arreglo1[6])
     console.log(arreglo1[7])
-    const numerosPares=[2,4,6,8];
-    const numerosImpares=[1,3,5,7,9];
-    const numerosTotales=numerosImpares.concat(numerosPares);
+    const numerosPares = [2, 4, 6, 8];
+    const numerosImpares = [1, 3, 5, 7, 9];
+    const numerosTotales = numerosImpares.concat(numerosPares);
     console.log(numerosTotales);
-    
+
     /*-----Sentencias de Control-----*/
-    let edad =17;
-    if(edad >=18){
+    let edad = 17;
+    if (edad >= 18) {
         console.log('Es mayor de edad');
-    }else{
+    } else {
         console.log('Es menor de edad');
     }
 
     let dia = 'maretes';
-    switch(dia){
+    switch (dia) {
         case 'lunes':
             console.log('Es lunes');
             break;
@@ -105,41 +105,152 @@ function fundamentosJS(){
         default:
             console.log('No es ni lunes ni martes');
     }
-    for(let i=0; i<=5;i++){
+    for (let i = 0; i <= 5; i++) {
         console.log(i);
     }
 
-    const frutas =['pera', 'sandia','manzana', 'papaya'];
-    for(let fruta of frutas){
+    const frutas = ['pera', 'sandia', 'manzana', 'papaya'];
+    for (let fruta of frutas) {
         console.log(fruta);
     }
 
     /*-----MANEJO DE OBJETOS-----*/
-    const profesor={
+    const profesor = {
         nombre: 'Pepe',
         apellido: 'Lavat',
         edad: 35,
         ecuatoriano: true,
         genero: 'M',
-        ciudad:'Quito'
-        
+        ciudad: 'Quito'
+
     }
     console.log(profesor);
     console.log(profesor.nombre);
-    profesor.apellido='Cuacacha';
+    profesor.apellido = 'Cuacacha';
     console.log(profesor);
 
-    if(profesor.ciudad === 'Quito'){
+    if (profesor.ciudad === 'Quito') {
         console.log('Es quiteño')
     }
-    if(profesor.edad !==36){
+    if (profesor.edad !== 36) {
         console.log('Es diferente de 36')
-    }else{
+    } else {
         console.log('Es 36')
     }
 
-    for(let clave in profesor){
+    for (let clave in profesor) {
         console.log(clave)
         console.log(profesor[clave])
     }
+
+    const e1 = {
+        nombre: 'Pepe',
+        apellido: 'Lavat',
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+
+    }
+
+    const e2 = {
+        nombre: 'Pepo',
+        apellido: 'Mavat',
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+
+    }
+
+    const arregloestudiantes = [e1, e2, {
+        nombre: 'Pepo3',
+        apellido: 'Mavat213',
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }];
+    console.log(arregloestudiantes[0]);
+    console.log(arregloestudiantes[2]);
+    /*-----DESESTRUCTURACIÓN-----*/
+    //Arreglos
+    const ar1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const [p1, p2, p3, p4, p5] = ar1;
+    console.log(p1);
+    console.log(p2);
+    console.log(p3);
+    console.log(p4);
+    console.log(p5);
+
+    const [primero, , , , , , , , ultimo] = ar1;
+    console.log(primero);
+    console.log(ultimo);
+
+    const [pos1, pos2] = [1, 2, 3, 4, 5];
+    console.log(pos1);
+    console.log(pos2);
+
+    imprime(ar1);
+
+    //Objetos
+    
+    const e3 = {
+        nombre: 'Pepo',
+        apellido: 'Mavat',
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+
+    }
+
+    const{nombre:n,ciudad:ciu}={
+        nombre: 'Pepo',
+        apellido: 'Mavat',
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }   
+    console.log(n);
+    console.log(ciu);
+    
+    const e4 = {
+        nombre: 'Pepo',
+        apellido: 'Mavat',
+        edad: 35,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito',
+        direccion:{
+            calle:"Av. América",
+            barrio:"La Gasca",
+            numeracion:"234"
+        }
+    }
+
+    console.log(e4.direccion);
+    console.log(e4.direccion.barrio);
+    
+    const {edad:ed,direccion}=e4;
+    console.log(ed);
+    console.log(direccion);
+    const{calle}=direccion;
+    console.log(calle);
+    
+    const{direccion:{barrio,calle:c1,numeracion}}=e4;
+    console.log(barrio);
+    console.log(c1);
+    console.log(numeracion);
+    
+    
+    
+    
+}
+
+function imprime([a,b,c]) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
