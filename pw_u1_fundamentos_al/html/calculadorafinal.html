@@ -16,9 +16,9 @@
         <section>
             <div id="calculadora">
                 <!--<label id="display">0+1=1</label>-->
-                <div id="display" >1+2=3</div>
+                <div id="display">0</div>
                 <button onclick="borrar()">C</button>
-                <button>&larr;</button>
+                <button onclick="retroceso()">&larr;</button>
                 <button onclick="evaluarOperacion('%')">%</button>
                 <button onclick="evaluarOperacion('/')">/</button>
                 <button onclick="mostrarDisplay(7)">7</button>
@@ -34,8 +34,8 @@
                 <button onclick="mostrarDisplay(3)">3</button>
                 <button onclick="evaluarOperacion('+')">+</button>
                 <button class="column-2" onclick="mostrarDisplay(0)">0</button>
-                <button>.</button>
-                <button>=</button>
+                <button onclick="agregarDecimal()">.</button>
+                <button onclick="evaluarOperacion('=')">=</button>
             </div>
         </section>
         <footer>Pie</footer>
