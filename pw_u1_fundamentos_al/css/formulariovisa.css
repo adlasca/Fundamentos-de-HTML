@@ -1,0 +1,51 @@
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formulario{
+    padding-right: 50px;
+    font-family: Arial, sans-serif;
+    color: rgb(84, 128, 148);
+    display: inline;
+}
+
+button{
+    padding:12px;
+    background-color:rgb(97, 111, 235) ;
+    color: white;
+    font-family:  sans-serif;
+    font-size: 17px;
+    border-radius: 8px;
+    border-style:none;
+    width: 100%;
+}
+
+input {
+    width: 250px;
+    height: 27px;
+    border:solid 2px rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.centrar-boton{
+    display:flex;
+    justify-content:center;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    font-size: 17px;
+    color: rgb(136, 133, 133);
+    margin-top: 35px;
+}
+
+.img{
+    padding-right: 35px;
+}

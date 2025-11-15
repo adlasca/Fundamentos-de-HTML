@@ -8,20 +8,19 @@ function validarCampos() {
     let fecha=document.getElementById("id_fecha").value;
     let password=document.getElementById("id_password").value;
     let email=document.getElementById("id_email").value;
-   /* if (nombre==="" ||email==="") {
+    if (nombre==="" ||email==="") {
         mostrarAsterisco('id_error_nombre');
         mostrarMensaje('Nombre obligatorio');
-        
         return;
-    }*/
+    }
     if(email===""){
         mostrarAsterisco('id_error_email');
         mostrarMensaje('Email obligatorio');   
-    }else{
-       let c= validarEmail(email);
-        if(c===false){
-            mostrarMensaje('email incorrecto');
-        }
+        return;
+    }
+    if(!validarEmail(email)){
+        mostrarMensaje('Email inválido');
+        mostrarAsterisco('id_error_email');
     }
 
     

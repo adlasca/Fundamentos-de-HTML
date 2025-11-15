@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulariovisa.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <header></header>
+        <div class="img"><img id="id_img" src="../img/imagen.png" alt="No imagen" width="250"></div>
+        <div class="formulario">
+            <section>
+                
+                <form action="#">
+                    <h2>Payment Details</h2>
+                    <p type="Cardholder Name"> <input id="id_cardname" type="text"> </p>
+                    <p type="Card Number"> <input id="id_cardnumber" type="text"> </p>
+
+                    <p type="Exp Date"> <input type="text" id="exp" placeholder="MM/YY" maxlength="5"
+                            pattern="(0[1-9]|1[0-2])\/\d{2}" required> </p>
+                    <p type="CVV"> <input id="id_cvv" type="text"> </p>
+
+                    <div class="centrar-boton">
+                        <button>Confirm</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
